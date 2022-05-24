@@ -22,3 +22,21 @@ variable "reg2LocationShort" {
   type = string
   default = "ne"
 }
+
+variable "ctlAdmin" {
+  description = "Admin username for controler"
+  type        = string
+  sensitive   = true
+}
+
+variable "ctlAdminPwd" {
+  description = "Admin password for controler"
+  type        = string
+  sensitive   = true
+}
+
+variable "ctlIP" {
+  description = "IP of controler"
+  type        = string
+  sensitive   = true
+}
